@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Vue practice</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{message}}</p>
+
+        your name:<input type="text" v-model="visitor_name">
+        <br>
+        your message: <input type="text" v-model="visitor_message">
+        <p v-if="count ==0">No replies yet</p>
+        <p v-else-if="count > 3"> you are a popular guy</p>
+        <p v-else>Number of replies {{count}}</p>
+        
+        <button v-on:click="sayHi">Say hi</button>
+
+        <ul>
+            <li v-for="name in visitors">{{name}}</li>
+        </ul>
+    </div>
+</body>
+<script type="text/JavaScript" src="week_4_stuff.js"></script>
+</html>
