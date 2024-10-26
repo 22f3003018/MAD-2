@@ -33,7 +33,7 @@ person.age = 20;
 console.log(person);
 
 // Arrays
-let var = ['hello',1,person];
+ let var_1 = ['hello',1,person];
 //Functions
 function greet(){
     console.log('Hello world')
